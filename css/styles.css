@@ -314,7 +314,6 @@ address {
 }
 
 .what-we-do .list .item {
-  display: block;
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
 }
@@ -323,8 +322,30 @@ address {
   margin-right: 0;
 }
 
-.list .item > img {
+.item .product-thumb {
+  position: relative;
   display: block;
+}
+
+.product-thumb .text {
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--lighter);
 }
 
 .our-team .team-cards {
@@ -493,7 +514,7 @@ address {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product-cards .card-img {
+.card-img {
   display: block;
 }
 
